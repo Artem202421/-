@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Проект Жук, Стуканов, Кублинская, Солнцев </title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen">
+
+<style>
+        body {
+        background: url("../images/body-bg.jpg") no-repeat fixed center top #FFFFFF;
+        color: #7F7F7F;
+        font-family: Arial,Helvetica,sans-serif;
+        font-size: 12px;
+        line-height: 17px;
+        }
+        img {
+        border: 0 none;
+        }
+        .container {
+        margin:30px auto 0;
+        position:relative;
+        text-align:left;
+        width:1000px;
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+        header {
+            background: url("../images/header-bg.png") repeat scroll left top #fff;
+            border-bottom:2px solid #e0e0e0;
+            position: relative;
+            z-index: 10;
+            }
+            .top_head {
+            overflow: hidden;
+            position: relative;
+            }
+            .logo {
+            float: left;
+            padding: 37px 0 0 39px;
+            }
+            #search {
+            float: right;
+            margin: 21px 41px 0 0;
+            text-align: right;
+            }
+            #search form {
+            float:right;
+            }
+            #search form input[type="text"] {
+            background: none repeat scroll 0 0 #FFFFFF;
+            border: 1px solid #E0E0E0;
+            float: left;
+            font-family: Arial,Helvetica,sans-serif;
+            height: 15px;
+            padding: 5px;
+            width: 129px;
+            }
+            #search form input[type="submit"] {
+            background-color: #FFFFFF;
+            border: 1px solid #E0E0E0;
+            border-left-width:0px;
+            color: #383838;
+            cursor:pointer;
+            float: left;
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            height: 27px;
+            padding: 0;
+            width: 64px;
+            }
+            #social {
+            float:right;
+            list-style:none outside none;
+            margin:0 30px 0 0;
+            padding:0;
+            }
+            #social li {
+            float:left;
+            padding:0 0 0 5px;
+            }
+            #social li a:hover img {
+            margin-top:1px;
+            }
+            
+            
+            nav {
+            background-color:#00942f;
+            overflow: hidden;
+            }
+            nav ul {
+            margin: 0;
+            padding: 0;
+            }
+            nav ul li {
+            float: left;
+            }
+            nav ul li a {
+            color: #FFFFFF;
+            display: block;
+            font-size: 11px;
+            font-weight: bold;
+            height: 20px;
+            line-height: 20px;
+            padding: 4px 10px 4px 11px;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            }
+            nav ul li a:hover, nav ul li.selected a {
+            background: none repeat scroll 0 0 #353535;
+            }
+            #submenu {
+            background: -moz-linear-gradient(#ffffff, #f6f6f6);
+            background: -ms-linear-gradient(#ffffff, #f6f6f6); 
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f6f6f6));  
+            background: -o-linear-gradient(#ffffff, #f6f6f6); 
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6'); 
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6')"; 
+            background: linear-gradient(#ffffff, #f6f6f6); 
+            height: 34px;
+            margin: 20px 40px;
+            }
+            #submenu ul {
+            margin: 0;
+            padding: 0;
+            }
+            #submenu li {
+            float: left;
+            line-height: 1em;
+            list-style: none outside none;
+            margin: 0;
+            position: relative;
+            }
+            #submenu li a {
+            background: url("../images/smenup.png") no-repeat scroll 0 9px transparent;
+            border-right: 1px solid #E0E0E0;
+            color: #383838;
+            display: block;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 14px;
+            margin: 0 0 0 19px;
+            padding: 9px 18px 11px 24px;
+            text-decoration: none;
+            text-transform: uppercase;
+            }
+            #submenu li a:hover {
+            background-image: url("../images/smenua.png");
+            }
+            #main {
+                background-color: #fff;
+                padding:20px 0;
+                }
+                #content {
+                overflow: hidden;
+                }
+                #content #left, #content #right {
+                border: 1px solid #E9E9E9;
+                float: left;
+                margin: 0 2%;
+                width: 63%;
+                }
+                #content #right {
+                margin-left: 0;
+                width: 30%;
+                }
+                #content h3 {
+                background: -moz-linear-gradient(#ffffff, #F6F6F6);
+                background: -ms-linear-gradient(#ffffff, #F6F6F6); 
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #F6F6F6));
+                background: -webkit-linear-gradient(#ffffff, #F6F6F6); /
+                }
+                #content ul {
+                list-style:none outside none;
+                margin:0;
+                padding:0;
+                }
+                #content #left ul li {
+                float:left;
+                padding-bottom: 21px;
+                width: 33%;
+                }
+                #content #left ul li:hover {
+                background-color: #fbfbfb;
+                }
+                #content #right ul li {
+                border-top: 1px solid #E7E7E7;
+                overflow: hidden;
+                }
+                #content #right ul li:hover {
+                background-color: #fbfbfb;
+                }
+                #content #right ul li:first-child {
+                border-width: none;
+                }
+                #content #left ul li .img {
+                text-align: center;
+                }
+                #content #right ul li .img {
+                background-color: #FFFFFF;
+                float: left;
+                height: 94px;
+                text-align: center;
+                width: 113px;
+                }
+                #content #left ul li .img img {
+                height:128px;
+                width:128px;
+                }
+                #content #right ul li .img img {
+                height:70px;
+                margin-top: 11px;
+                width:70px;
+                }
+                #content #left ul li .info {
+                padding: 17px 20px 0 19px;
+                }
+                #content #right ul li .info {
+                float: left;
+                overflow: hidden;
+                padding: 17px 0 0 21px;
+                width: 164px;
+                }
+                #content ul li .info .title {
+                color: #4B4B4B;
+                display: inline-block;
+                font-size: 11px;
+                font-weight: bold;
+                line-height: 16px;
+                text-decoration: none;
+                text-transform: uppercase;
+                width: 150px;
+                }
+                #content ul li .info .title:hover {
+                color: #049733;
+                }
+                #content #left ul li .info p {
+                color: #7F7F7F;
+                font-size: 11px;
+                line-height: 16px;
+                padding-top: 3px;
+                }
+                #content #left ul li .info .price {
+                background: none repeat scroll 0 0 #F7F7F7;
+                color: #383838;
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 16px;
+                margin: 17px 0 10px;
+                padding: 6px 0 6px 8px;
+                }
+                #content #right ul li .info .price {
+                color: #383838;
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 16px;
+                padding-top: 25px;
+                }
+                #content #left ul li .info .price .st {
+                color: #7F7F7F;
+                font-size: 11px;
+                line-height: 16px;
+                margin-right: 3px;
+                }
+                #content #right ul li .info .price .usual, #content #right ul li .info .price .special {
+                color: #7F7F7F;
+                font-size: 12px;
+                font-weight: normal;
+                line-height: 16px;
+                padding-right: 6px;
+                text-decoration: line-through;
+                }
+                #content #right ul li .info .price .special {
+                color: #FD7A01;
+                font-weight: bold;
+                text-decoration: none;
+                }
+                #content #left ul li .info .actions {
+                overflow:hidden;
+                }
+                #content #left ul li .info .actions a {
+                border: 1px solid #E0E0E0;
+                color: #fd7a01;
+                display: block;
+                float:right;
+                font-size: 11px;
+                font-weight: bold;
+                line-height: 16px;
+                padding: 5px;
+                text-decoration: none;
+                }
+                #content #left ul li .info .actions a:first-child {
+                color: #009832;
+                float:left;
+                }
+                
+</style>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.nivo.slider.pack.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="js/html5.js"></script>
+</head>
+<body>
+
+    <div>
+    
+    <header>
+    
+    <footer>
+    <div id="privacy">
+    </div>
+    </footer>
+    
+    </div>
+</body>
+<header>
+
+    <nav>
+    <ul>
+    <li class="selected"><a href="#">Домой</a></li>
+    <li><a href="#">Специальные предложения</a></li>
+    <li><a href="#">Все продукты</a></li>
+    <li><a href="#">Связаться с нами</a></li>
+    <li><a href="#">О нас</a></li>
+    </ul>
+    </nav>
+    
+    <div class="top_head">
+        <div class="logo">
+            <a href="">
+                <!-- Здесь может быть логотип -->
+            </a>
+        </div>
+        
+        <section id="search">
+            <form action="#" onsubmit="handleSubmit(event)" method="get">
+                <input type="text" id="searchInput" onfocus="if (this.value =='Поиск..' ) this.value=''" onblur="if (this.value=='') this.value='Поиск..'" value="Поиск.." name="q">
+                <input type="submit" value="Найти">
+            </form>
+        </section>
+    </div>
+    
+    <script>
+        function handleSubmit(event) {
+            // Предотвращаем стандартное поведение формы
+            event.preventDefault();
+            
+            // Получаем значение из текстового поля
+            var searchQuery = document.getElementById('searchInput').value;
+            
+            // Убедимся, что значение не является плейсхолдером
+            if (searchQuery && searchQuery !== 'Поиск..') {
+                console.log('Поисковый запрос:', searchQuery);
+                let index;
+                let list = [['HP', 'Victus'], ['HP', 'Omen'], ['ROG', 'Strix'], ['HUAWEI', 'MateBook', '16'], ['HONOR', 'MAGICBOOK'], ['HUAWEI', 'MateBook', '14'], ['LENOVO', '15ABA7'], ['LENOVO', 'ABCABC'], ['HONOR', 'Extensa', '15'], ['ASUS', 'ROG'], ['VOVE', '14a'], ['VOVE', 'Book3']];
+                let inp = searchQuery;
+                let flag = 0;
+                for (let i = 0; i < 12; i++) {
+                    let a = list[i];
+                    index=0
+                    for (index = 0; index < a.length; ++index) {
+                        if ((a[index].includes(inp))) {
+                            flag = 1
+                        }
+                        if (!(a[index].includes(inp))) {
+                            if (flag==0) {
+                                document.getElementById(i+1).style.display = "none";
+                            }
+                        }
+                    }
+                    flag = 0
+                }
+            }
+        }
+    </script>
+    
+</header>
+<div id="slider">
+
+    <section id="slider-wrapper">
+    <div id="slider" class="nivoSlider">
+    <img style="display: none;" src="" alt="" title="#htmlcaption-1">
+    <img style="display: none;" src="" alt="" title="#htmlcaption-2">
+    <img style="display: none;" src="" alt="" title="#htmlcaption-3">
+    </div>
+    <div id="htmlcaption-1">
+    </div>
+    <div id="htmlcaption-1">
+    </div>
+    <div id="htmlcaption-2">
+    </div>
+    <div id="htmlcaption-3">
+    </div>
+    </section>
+    </div>
+    <div id="main">
+    <section id="content">
+    <div id="left">
+    <h3>Последние продукты</h3>
+    <ul>
+    <li id="1">
+    <div class="img"><a href="#"><img alt="" src="1.jpg"></a></div>
+    <div class="info">
+    <a class="title" href="#">HP Victus 16-e0080ur</a>
+    <p>Описание</p>
+    <div class="price">
+    <span class="st">Цена:</span><strong>₽49 336,43</strong>
+    </div>
+    <div class="actions">
+    <a href="#">Подробности</a>
+    <a href="#">Добавить в корзину</a>
+    </div>
+    </div>
+    </li>
+    <li id="2">
+    <div class="img"><a href="#"><img alt="" src="2.jpg"></a></div>
+    <div class="info">
+    <a class="title" href="#">HP Omen 16</a>
+    <p>Описание</p>
+    <div class="price">
+    <span class="st">Цена:</span><strong>₽22 425,65</strong>
+    </div>
+    <div class="actions">
+    <a href="#">Подробности</a>
+    <a href="#">Добавить в корзину</a>
+    </div>
+    </div>
+    </li>
+    <li id="3">
+    <div class="img"><a href="#"><img alt="" src="3.jpg"></a></div>
+    <div class="info">
+    <a class="title" href="#">ROG Strix G15</a>
+    <p>Описание</p>
+    <div class="price">
+    <span class="st">Цена:</span><strong>₽31 395,91</strong>
+    </div>
+    <div class="actions">
+    <a href="#">Подробности</a>
+    <a href="#">Добавить в корзину</a>
+    </div>
+    </div>
+    </li>
+    <li id="4">
+    <div class="img"><a href="#"><img alt="" src="4.jpg"></a></div>
+    <div class="info">
+    <a class="title" href="#">HUAWEI MateBook 16</a>
+    <p>Описание</p>
+    <div class="price">
+    <span class="st">Цена:</span><strong>₽49 336,43</strong>
+    </div>
+    <div class="actions">
+    <a href="#">Подробности</a>
+    <a href="#">Добавить в корзину</a>
+    </div>
+    </div>
+    </li>
+    <li id="5">
+    <div class="img"><a href="#"><img alt="" src="5.jpg"></a></div>
+    <div class="info">
+    <a class="title" href="#">Honor MAGICBOOK</a>
+    <p>Описание</p>
+    <div class="price">
+    <span class="st">Цена:</span><strong>₽22 425,65</strong>
+    </div>
+    <div class="actions">
+    <a href="#">Подробности</a>
+    <a href="#">Добавить в корзину</a>
+    </div>
+    </div>
+    </li>
+    <li id="6">
+    <div class="img"><a href="#"><img alt="" src="6.jpg"></a></div>
+    <div class="info">
+    <a class="title" href="#">HUAWEI MateBook 14</a>
+    <p>Описание </p>
+    <div class="price">
+    <span class="st">Цена:</span><strong>₽31 395,91</strong>
+    </div>
+    <div class="actions">
+    <a href="#">Подробности</a>
+    <a href="#">Добавить в корзину</a>
+    </div>
+    </div>
+    </li>
+    <li id="7">
+        <div class="img"><a href="#"><img alt="" src="13.jpg"></a></div>
+        <div class="info">
+        <a class="title" href="#">LENOVO 15ABA7</a>
+        <p>Описание</p>
+        <div class="price">
+        <span class="st">Цена:</span><strong>₽98 761,34</strong>
+        </div>
+        <div class="actions">
+        <a href="#">Подробности</a>
+        <a href="#">Добавить в корзину</a>
+        </div>
+        </div>
+        </li>
+        <li id="8">
+        <div class="img"><a href="#"><img alt="" src="14.jpg"></a></div>
+        <div class="info">
+        <a class="title" href="#">LENOVO ABCABC</a>
+        <p>Описание</p>
+        <div class="price">
+        <span class="st">Цена:</span><strong>₽45 568,56</strong>
+        </div>
+        <div class="actions">
+        <a href="#">Подробности</a>
+        <a href="#">Добавить в корзину</a>
+        </div>
+        </div>
+        </li>
+        <li id="9">
+        <div class="img"><a href="#"><img alt="" src="15.jpg"></a></div>
+        <div class="info">
+        <a class="title" href="#">Honor Extensa 15</a>
+        <p>Описание</p>
+        <div class="price">
+        <span class="st">Цена:</span><strong>₽145 679,76</strong>
+        </div>
+        <div class="actions">
+        <a href="#">Подробности</a>
+        <a href="#">Добавить в корзину</a>
+        </div>
+        </div>
+        </li>
+        <li id="10">
+        <div class="img"><a href="#"><img alt="" src="16.jpg"></a></div>
+        <div class="info">
+        <a class="title" href="#">Asus ROG</a>
+        <p>Описание</p>
+        <div class="price">
+        <span class="st">Цена:</span><strong>₽13 876,87</strong>
+        </div>
+        <div class="actions">
+        <a href="#">Подробности</a>
+        <a href="#">Добавить в корзину</a>
+        </div>
+        </div>
+        </li>
+        <li id="11">
+        <div class="img"><a href="#"><img alt="" src="17.jpg"></a></div>
+        <div class="info">
+        <a class="title" href="#">Vove 14a</a>
+        <p>Описание</p>
+        <div class="price">
+        <span class="st">Цена:</span><strong>₽59 844,13</strong>
+        </div>
+        <div class="actions">
+        <a href="#">Подробности</a>
+        <a href="#">Добавить в корзину</a>
+        </div>
+        </div>
+        </li>
+        <li id="12">
+        <div class="img"><a href="#"><img alt="" src="18.jpg"></a></div>
+        <div class="info">
+        <a class="title" href="#">Vove Book3</a>
+        <p>Описание </p>
+        <div class="price">
+        <span class="st">Цена:</span><strong>₽107 354,46</strong>
+        </div>
+        <div class="actions">
+        <a href="#">Подробности</a>
+        <a href="#">Добавить в корзину</a>
+        </div>
+        </div>
+        </li>
+    </ul>
+    </div>
+    <div id="right">
+    <h3>Лучшие предложения</h3>
+    <ul>
+    <li>
+    <div class="img"><a href="#"><img alt="" src="7.jpg"></a></div>
+    <div class="info">
+    <a class="title" href="#">vove N4000</a>
+    <div class="price">
+    <span class="usual">₽53 821,56 </span>&nbsp;
+    <span class="special">₽44 851,3</span>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div class="img"><a href="#"><img alt="" src="8.jpg"></a></div>
+    <div class="info">
+    <a class="title" href="#">ASUS UM3504DA</a>
+    <div  class="price">
+    <span class="usual">₽44 851,3 </span>&nbsp;
+    <span class="special">₽35 881,04</span>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div class="img"><a href="#"><img alt="" src="9.jpg"></a></div>
+    <div class="info">
+    <a class="title" href="#">ASUS VivoBook 17</a>
+    <div class="price">
+    <span class="usual">₽62 791,82 </span>&nbsp;
+    <span class="special">₽53 821,56</span>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div class="img"><a href="#"><img alt="" src="10.jpg"></a></div>
+    <div class="info">
+    <a class="title" href="#">RB-1551</a>
+    <div class="price">
+    <span class="usual">₽72 210,59 </span>&nbsp;
+    <span class="special">₽64 070,08</span>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div class="img"><a href="#"><img alt="" src="11.jpg"></a></div>
+    <div class="info">
+    <a class="title" href="#">Lenovo IdeaPad 3</a>
+    <div class="price">
+    <span class="usual">₽108 091,63 </span>&nbsp;
+    <span class="special">₽89 725,02</span>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div class="img"><a href="#"><img alt="" src="12.jpg"></a></div>
+    <div class="info">
+    <a class="title" href="#">Lenovo ThinkPad E14 Gen 4</a>
+    <div class="price">
+    <span class="usual">₽17 940,52 </span>&nbsp;
+    <span class="special">₽17 065,92</span>
+    </div>
+    </div>
+    </li>
+    </ul>
+    </div>
+    </section>
+</div>
